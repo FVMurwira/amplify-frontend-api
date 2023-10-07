@@ -1,0 +1,103 @@
+<body>
+    <div class="left-column">
+        <!-- Content and background image for the left column -->
+        <span class="forgotpassword-text">
+            <span>
+                <span>LEARNING MADE</span>
+                <br />
+                <span>EASY WITH</span>
+                <br />
+                <span>ANN-CONNECT</span>
+            </span>
+        </span>
+    </div>
+    <div class="right-column">
+        <div class="login-form">
+                <div class="pt-4 pb-2">
+                    <h5 class="card-title text-left pb-0 fs-4">Register a Student Portal Account</h5>
+                    <p class="text-left small">Please complete All fields  &amp; Register your account to proceed</p>
+                </div>
+    
+                <form (ngSubmit)="onUserSignUPSubmit_Func(username,surname, idNumber,schoolName,email,cellNumber,password, password_confirmation,studentNo,schoolId)">
+                  
+    
+                 
+
+                <div class="col-7">
+                    <label for="username" class="form-label">Nane :</label>
+                    <div>
+                        <input type="text" name="username" id="username" [(ngModel)]="username" placeholder=" Enter Name...." required>
+                        <div class="invalid-feedback">Please enter your Student Number.</div>
+                    </div>
+                </div>
+                
+                      <div class="col-7">
+                        <label for="surname" class="form-label">Surname :</label>
+                        <input type="text" id="surname" name="surname" [(ngModel)]="surname" placeholder=" Enter Surname..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your password!</div>
+                      </div>
+                
+                      <div class="col-7">
+                        <label for="idNumber" class="form-label">ID Number :</label>
+                        <input type="text" id="idNumber" name="idNumber" [(ngModel)]="idNumber" placeholder=" Enter ID Number..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your idNumber!</div>
+                      </div>
+                
+                      <div class="col-7">
+                        <label for="schoolName" class="form-label">School Name :</label>
+                        <input type="text" id="schoolName" name="schoolName"  [(ngModel)]="schoolName" placeholder=" Enter School Name..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your School Name!</div>
+                      </div>
+                
+                
+                      <div class="col-7">
+                        <label for="email" class="form-label">Email Address :</label>
+                        <input type="text" id="email" name="email" [(ngModel)]="email" placeholder=" Enter your Email..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your Email!</div>
+                      </div>
+                
+                
+                      <div class="col-7">
+                        <label for="tel" class="form-label">phone Number :</label>
+                        <input type="text" id="tel" name="tel" [(ngModel)]="cellNumber"  placeholder=" Enter Phone Number...." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your phone Number!</div>
+                      </div>
+                
+                      <div class="col-7">
+                        <label for="password" class="form-label">Password :</label>
+                        <input type="password" id="password" name="password" [(ngModel)]="password" placeholder=" Enter Password...." required>
+                        <div class="invalid-feedback">Please enter your password!</div>
+                    </div>
+                
+                      <div class="col-7">
+                        <label for="confirmPassword" class="form-label"> Confirm Password :</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="password_confirmation" placeholder=" Enter Matching Password..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your Matching Password!</div>
+                      </div>
+                
+                      <div class="col-7">
+                        <label for="studentNumber" class="form-label">Student Number :</label>
+                        <input type="text" id="studentNumber" name="studentNumber" [(ngModel)]="studentNo" placeholder=" Enter Student Number..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your Student Number!</div>
+                      </div>
+                
+                      <div class="col-7">
+                        <label for="schoolId" class="form-label">School ID :</label>
+                        <input type="text" id="schoolId" name="schoolId" [(ngModel)]="schoolId" placeholder=" Enter School ID..." required="" class="ng-dirty ng-valid ng-touched">
+                        <div class="invalid-feedback">Please enter your School ID!</div>
+                      </div>
+                
+                    <div class="col-7">
+                        <button type="submit">Login</button>
+                    </div>
+                    <br />
+                    <div class="col-6">
+                        <p class="small mb-0">Already have account? <a routerLink="/login">Login</a></p>
+                    </div>
+                </form>
+        </div>
+    </div>
+    
+    </body>
+
+    

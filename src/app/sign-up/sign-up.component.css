@@ -1,0 +1,108 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 115vh;
+    overflow-y: auto; 
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height:  120%;
+    overflow-y: auto;
+ 
+
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .body {
+      padding: 10px;
+    }
+  }
+.left-column {
+    flex: 1;
+    background-image: url('../..//assets/img/bgImage.jpeg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column {
+    flex: 1;
+    background-color: #fff; /* Right column background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable-container {
+    height: 400px; /* Set a fixed height for the container */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow-y: auto; /* Add vertical scrollbar if content overflows the fixed height */
+  }
+  
+  /* .login-form {
+    max-height:112vh ;
+    overflow-y: auto; 
+    max-width: 8000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #853452;
+    background-color: #FBA490;
+    border-radius: 10px;
+
+} */
+
+.login-form {
+    max-width: 500px;
+    margin: 20 auto;
+    padding: 18px;
+    border: 1px solid #853452;
+    background-color: #FBA490;
+    border-radius: 10px;
+    overflow-y: auto; 
+
+}
+
+/* Styling for the span element */
+.left-aligned-text {
+    display: block; /* Make the span a block-level element */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+/* Styling for the input fields */
+input[type="text"], input[type="password"] {
+    width: 350px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #853452;
+    border-radius: 12px;
+}
+
+/* Styling for the login button */
+
+
+.login-form button {
+    width: 90%;
+    padding: 12px;
+    background-color: #853452;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

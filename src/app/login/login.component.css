@@ -1,0 +1,101 @@
+
+.container {
+  width: 100%; /* Responsive width */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .container {
+    padding: 10px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height:  140%;
+  overflow-y: auto;
+
+
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .body {
+    padding: 10px;
+  }
+}
+
+
+.left-column {
+  flex: 1 1 ;
+  background-image: url('../..//assets/img/bgImage.jpeg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+
+}
+
+.right-column {
+  flex: 1 1 ;
+  background-color: #fff; /* Right column background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.login-form {
+  max-width: 400px;
+  margin: 12 auto;
+  padding: 8px 30px;
+  border: 1px solid #853452;
+  background-color: #FBA490;
+  border-radius: 10px;
+
+}
+
+
+
+
+/* Styling for the span element */
+.left-aligned-text {
+  display: block; /* Make the span a block-level element */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+/* Styling for the input fields */
+input[type="text"], input[type="password"] {
+  width: 350px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 2px solid #853452;
+  border-radius: 12px;
+}
+
+/* Styling for the login button */
+
+
+.login-form button {
+  width: 90%;
+  padding: 12px;
+  background-color: #853452;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
