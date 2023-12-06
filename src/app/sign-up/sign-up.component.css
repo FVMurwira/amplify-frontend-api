@@ -106,3 +106,31 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/* Apply styles to all form labels */
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Apply specific styles to labels with a class of "form-label" */
+.form-label {
+    color: #3498db;
+    font-size: 16px;
+}
+
+/* Apply styles to input elements following a label with class "form-label" */
+.form-label + input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Apply styles to input elements following a label with class "form-label" when they are in focus */
+.form-label + input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}

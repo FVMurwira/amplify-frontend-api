@@ -19,7 +19,6 @@ body {
   height:  140%;
   overflow-y: auto;
 
-
 }
 
 @media (max-width: 768px) {
@@ -29,10 +28,8 @@ body {
   }
 }
 
-
 .left-column {
   flex: 1 1 ;
-  background-image: url('../..//assets/img/bgImage.jpeg'); /* Replace 'background-image.jpg' with your image path */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -44,16 +41,25 @@ body {
 
 }
 
+.image {
+  display: flex;
+  width: 50%;
+  vertical-align: middle;
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('C:/Fadzai_logs_and_work/AWS/Monicah/Ann-Connect-Frontend-Api/amplify-frontend-api/src/assets/img/bgImage.jpeg'); /* Replace 'background-image.jpg' with your image path */
+}
+
 .right-column {
   flex: 1 1 ;
-  background-color: #fff; /* Right column background color */
+  background-color: #c93232; /* Right column background color */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
-
 
 .login-form {
   max-width: 400px;
